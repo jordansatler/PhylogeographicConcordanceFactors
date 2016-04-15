@@ -26,10 +26,10 @@ Can then place species tree distributions in a folder (separate from script), se
 tree folder as your current working directory, then call the script. This will run the 
 analysis, provide folders for the mbsum and bucky output, plus write a table summarizing
 all bucky runs with their average PCF value. This can then be imported into excel and 
-sorted by *K*.
+sorted by *K* and PCF values.
 
 ___
-example:
+example usage:
 
 **python ../script/PCFs.py *.trees**
 ___
