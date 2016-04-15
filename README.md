@@ -45,5 +45,5 @@ Larget, B., S.K. Kotha, C.N. Dewey, and C. Ané. 2010. BUCKy: Gene tree / specie
 reconciliation with the Bayesian concordance analysis. Bioinformatics 26:2910–2911.
 
 Satler, J.D., and B.C. Carstens. 2016. Phylogeographic concordance factors quantify 
-phylogeographic conruence among co-distributed species in the *Sarracenia alata*
+phylogeographic congruence among co-distributed species in the *Sarracenia alata*
 pitcher plant system. Evolution *in press*.
