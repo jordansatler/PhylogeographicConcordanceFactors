@@ -1,7 +1,7 @@
 # Phylogeographic Concordance Factors (PCFs)
 
 
-
+___
 **PCFs.py** will calculate phylogeographic concordance factors for a set of 
 co-distributed species. The method is described in Satler and Carstens 
 (Evolution, *in press*).
@@ -10,7 +10,7 @@ co-distributed species. The method is described in Satler and Carstens
 ___
 ## Instructions for use
 
-Python script (written in version 2.7.6) and uses mbsum and bucky (Ané et al. 2007; 
+Python script (written in version 2.7.6) uses mbsum and bucky (Ané et al. 2007; 
 Larget et al. 2010). You will want to download those two programs and place them in your 
 $PATH. Script was tested with bucky v1.4.3 but should work on the latest version.
 
@@ -28,7 +28,7 @@ analysis, provide folders for the mbsum and bucky output, plus write a table sum
 all bucky runs with their average PCF value. This can then be imported into excel and 
 sorted by *K*.
 
-
+___
 example:
 
 **python ../script/PCFs.py *.trees**
