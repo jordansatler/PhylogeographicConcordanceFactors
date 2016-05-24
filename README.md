@@ -4,7 +4,7 @@
 ___
 **PCFs.py** will calculate phylogeographic concordance factors for a set of 
 co-distributed species. The method is described in Satler and Carstens 
-(Evolution, *in press*).
+(2016).
 
 
 ___
@@ -40,11 +40,11 @@ ___
 References:
 
 Ané, C., B. Larget, D.A. Baum, S.D. Smith, and A. Rokas. 2007. Bayesian estimation of 
-concordance among gene trees. Molecular Biology and Evolution 24:412–426.
+concordance among gene trees. *Molecular Biology and Evolution*, **24**:412–426.
 
 Larget, B., S.K. Kotha, C.N. Dewey, and C. Ané. 2010. BUCKy: Gene tree / species tree 
-reconciliation with the Bayesian concordance analysis. Bioinformatics 26:2910–2911.
+reconciliation with the Bayesian concordance analysis. *Bioinformatics*, **26**:2910–2911.
 
 Satler, J.D., and B.C. Carstens. 2016. Phylogeographic concordance factors quantify 
 phylogeographic congruence among co-distributed species in the *Sarracenia alata*
-pitcher plant system. Evolution *in press*.
+pitcher plant system. *Evolution*, **70**:1105–1119..
