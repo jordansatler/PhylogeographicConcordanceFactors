@@ -141,7 +141,7 @@ def bucky():
                 shutil.move(str(i), "./bucky_results/bucky_" + str(Num) + "/" + str(i))
             
             elif 'PCF' in i and i == 'PCF.concordance':    
-                buildPCF = concordance_tree(Traits)
+                buildPCF = concordance_tree()
                 shutil.move(str(i), "./bucky_results/bucky_" + str(Num) + "/" + str(i))
                 
                 nodalSup = calculate()
@@ -175,11 +175,11 @@ def combos(trees):
                 comb.append(subset)
     return comb, len(trees)
 
-def concordance_tree(Traits):
+def concordance_tree():
     """Takes Bucky output and returns a modified concordance tree with 
         concordance factors"""
     Infile = open("./PCF.concordance", 'r')
-    
+    OTUs = {}
     lines = []
     tmp = ''
     for line in Infile:
@@ -189,6 +189,11 @@ def concordance_tree(Traits):
             tmp = ''
         if line == 'Primary Concordance Tree with Sample Concordance Factors:':
             tmp = line
+            
+        #Get OTU names for community tree
+        if len(line.split()) == 2 and line[0].isdigit() == True:
+            line = line.split()
+            OTUs[line[0]] = line[1][:-1]
     
     Tree = ''
     for i in lines:
@@ -196,7 +201,7 @@ def concordance_tree(Traits):
         for j in range(len(i)):
             #Add in OTU names
             if i[j] == ':' and tmp.isdigit() == True:
-                add = Traits[tmp] + ":"
+                add = OTUs[tmp] + ":"
                 Tree += add
             
             elif i[j].isdigit() == True:
