@@ -17,10 +17,9 @@ $PATH. Script was tested with bucky v1.4.3 but should work on the latest version
 Script uses species tree distributions as input; this has been tested with trees from
 both *BEAST and SNAPP. Important things before running script:
 
-1. OTUs should be the **same** across all species *and* OTUs should be in the **same order** 
-across all species.
+1. OTUs need to be the **same** across all species, but order of the OTUs is not important.
 2. Tree distributions should contain the same number of trees across each species. 
-If necessary, trim (or thin) distributions until they are matching in length.
+If necessary, thin distributions until they are matching in length.
 
 Can then place species tree distributions in a folder (separate from script), set the 
 tree folder as your current working directory, then call the script. This will run the 
